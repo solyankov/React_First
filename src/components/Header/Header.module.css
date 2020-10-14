@@ -1,0 +1,17 @@
+.Header img{
+    height: 80%;
+    /*margin-left: 20px;*/
+    align-items: center;
+    margin: auto 40px;
+}
+
+
+.Header{
+    border-radius: 0 0 20px 20px;
+    background: #293238;
+    box-shadow:  7px 7px 14px #20282c,
+    -7px -7px 14px #323d44;
+    display: flex;
+    grid-area: h;
+}
+

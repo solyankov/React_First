@@ -1,0 +1,6 @@
+.DialogMain{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    height: 100%;
+    padding: 20px;
+}
