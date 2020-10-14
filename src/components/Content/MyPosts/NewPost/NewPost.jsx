@@ -3,7 +3,8 @@ import s from './NewPost.module.css'
 const NewPost=()=>{
     return(
         <div className={s.NewPost}>
-            Creating New Post
+            <input placeholder='Enter your post'/>
+            <button>Send</button>
         </div>
     )
 }

@@ -1,8 +1,9 @@
 .Content{
     display: flex;
     flex-direction: column;
-
-    background-color: chocolate;
+    background-color: #353f45;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .Content img{

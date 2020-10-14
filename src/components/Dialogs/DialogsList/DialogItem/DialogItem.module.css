@@ -1,3 +1,31 @@
 .item{
-
+    text-decoration: none !important;
+    text-align: left;
+    color: #dae2e7;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 14px;
+    border-radius: 5px;
+    background: #353f45;
+    display: flex;
+    transition: .2s linear, background 2s ease-in-out;
 }
+.item:hover{
+    background: linear-gradient(145deg, #1c2429, #212b31);
+    box-shadow:  7px 7px 14px #1a2227,
+    -7px -7px 14px #242e35;
+}
+
+.item img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.name{
+    padding: 20px;
+}
+
+.nav{
+    text-decoration: none;
+}
+

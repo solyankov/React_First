@@ -4,13 +4,13 @@ import {NavLink} from "react-router-dom";
 const Nav = ()=>{
     return(
         <div className={s.Nav}>
-            <NavLink to='/profile'>
+            <NavLink to='/profile' className={s.nav}>
                 <div className={s.item}>
                     Profile
                 </div>
             </NavLink>
 
-            <NavLink to='/dialogs'>
+            <NavLink to='/dialogs' className={s.nav}>
                 <div className={s.item}>
                     Dialogs
                 </div>
@@ -25,6 +25,7 @@ const Nav = ()=>{
             <div className={s.item}>
                 Profile3
             </div>
+
         </div>
     )
 }

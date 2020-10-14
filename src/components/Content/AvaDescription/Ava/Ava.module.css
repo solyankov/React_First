@@ -1,3 +1,8 @@
 .Ava{
-    color: blueviolet;
+    width: 100px;
+
+}
+
+.Ava img{
+    border-radius: 5px;
 }

@@ -1,0 +1,8 @@
+.MessageItem{
+    background-color: #3f4950;
+    padding: 15px;
+    margin: 15px;
+    color: #dae2e7;
+    border-radius: 5px;
+    max-width: 300px;
+}

@@ -8,8 +8,10 @@ const AvaDescription=()=>{
     return(
         <div className={s.AvaDescription}>
             <HeaderPhoto/>
-            <Ava/>
-            <Description/>
+            <div className={s.AvaDes}>
+                <Ava/>
+                <Description/>
+            </div>
         </div>
     )
 }
