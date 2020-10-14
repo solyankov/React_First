@@ -5,8 +5,8 @@ import ListOfPosts from "./ListOfPosts/ListOfPosts";
 const MyPosts=(props)=>{
     return(
         <div className={s.MyPosts}>
-            <NewPost/>
-            <ListOfPosts posts={props.posts}/>
+            <NewPost addPost={props.addPost}/>
+            <ListOfPosts posts={props.posts} />
         </div>
     )
 }
