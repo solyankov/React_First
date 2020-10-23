@@ -4,5 +4,10 @@
     margin: 15px;
     color: #dae2e7;
     border-radius: 5px;
+    max-width: 100%;
 
+}
+.Post span{
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }

@@ -1,10 +1,12 @@
-.NewPost{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.NewMessage{
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
 }
 
-.NewPost button{
+.NewMessage button{
     border: none;
     background-color: #242e35;
     color: #dae2e7;
@@ -12,7 +14,7 @@
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
-.NewPost textarea{
+.NewMessage input{
     padding-left: 10px;
     border: none;
     color: #dae2e7;

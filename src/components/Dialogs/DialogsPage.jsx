@@ -7,8 +7,10 @@ import ChatList from "./Chat/ChatList";
 const DialogsPage=(props)=>{
     return(
         <div className={s.DialogMain}>
-            <DialogsList dialogs={props.dialogs}/>
-            <ChatList  messages={props.messages}/>
+            <DialogsList dialogs={props.state.DialogsPage.dialogs}/>
+            <ChatList  messages={props.state.DialogsPage.messages}
+                       NewMessageText={props.NewMessageText}
+                       dispatch={props.dispatch}/>
         </div>
     )
 }

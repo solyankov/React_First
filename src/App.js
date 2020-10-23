@@ -13,15 +13,23 @@ function App(props) {
   return (
       <BrowserRouter>
           <div className="App-wrapper">
-            <Header />
-            <Nav/>
-            <div className='mainWindow'>
-                <Route path='/dialogs' render={()=>
-                    <DialogsPage dialogs={props.state.DialogsPage.dialogs}
-                                 messages={props.state.DialogsPage.messages
-                                 }/>}/>
-                <Route path='/profile' render={()=><Content posts={props.state.ProfilePage.posts}
-                                                            addPost={props.addPost}/>}/>
+                <Header />
+            <div className="FirstDiv">
+                <div className="SecondDiv">
+                    <Nav/>
+                    <div className='mainWindow'>
+                            <Route path='/dialogs' render={()=>
+                                <DialogsPage dispatch={props.dispatch}
+                                             state={props.state}
+                                             NewMessageText={props.state.DialogsPage.NewMessageText}
+                                        />}/>
+                            <Route path='/profile' render={()=>
+                                <Content posts={props.state.ProfilePage.posts}
+                                         dispatch={props.dispatch}
+                                         NewPostText={props.state.ProfilePage.NewPostText}
+                                         />}/>
+                    </div>
+                </div>
             </div>
           </div>
       </BrowserRouter>

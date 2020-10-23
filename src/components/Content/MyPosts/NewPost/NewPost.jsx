@@ -1,19 +1,31 @@
 import React from 'react';
 import s from './NewPost.module.css'
+import {addPostActionCreator, updatePostAreaActionCreator} from "../../../../Redux/profileReducer";
+
 const NewPost=(props)=>{
+
+
 
     let newPostElement = React.createRef()
 
     let addPost=()=>{
-        props.addPost(newPostElement.current.value)
+        props.dispatch(addPostActionCreator())
     }
+
+    let OnPostChange=()=>{
+        let text=newPostElement.current.value
+        props.dispatch(updatePostAreaActionCreator(text))
+    }
+
 
     return(
         <div className={s.NewPost}>
-            <input placeholder='Enter your post' ref={newPostElement}/>
+            <textarea onChange={OnPostChange}  value={props.newPostText} ref={newPostElement}/>
+
             <button onClick={addPost}>Send</button>
         </div>
     )
+
 }
 
 export default NewPost

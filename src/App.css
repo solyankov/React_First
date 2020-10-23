@@ -1,19 +1,35 @@
 .App-wrapper{
-
-    width: 95%;
+/*    width: 95%;
     margin: 0 auto;
-    display: grid;
+    display: flex;*/
+    outline: none;
 
-    grid-template-areas:    "h h"
-                            "n c";
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 10px;
+
+    /*grid-template-areas:    "h h"*/
+    /*                        "n c";*/
+    /*grid-template-rows: 60px 1fr;*/
+    /*grid-template-columns: 2fr 10fr;*/
+    /*grid-gap: 10px;*/
+}
+
+.FirstDiv{
+    width: 100%;
+}
+
+.SecondDiv{
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.SecondDiv Nav{
+    width: 20%;
 }
 
 .mainWindow{
     grid-area: c;
     height: 100%;
+    width: 100%;
 }
 
 

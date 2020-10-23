@@ -6,7 +6,10 @@ const Content=(props)=>{
     return(
         <div className={s.Content}>
             <AvaDescription/>
-            <MyPosts posts={props.posts} addPost={props.addPost}/>
+            <MyPosts posts={props.posts}
+                     dispatch={props.dispatch}
+                     newPostText={props.NewPostText}
+                     />
         </div>
     )
 }

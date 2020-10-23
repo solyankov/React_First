@@ -3,7 +3,7 @@ import s from './Post.module.css'
 const Post=(props)=>{
     return(
         <div className={s.Post}>
-           <p> {props.text}</p>
+           <span> {props.text}</span>
         </div>
     )
 }

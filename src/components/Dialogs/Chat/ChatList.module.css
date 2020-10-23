@@ -1,5 +1,6 @@
 .ChatAll{
     background-color: #353f45;
-    height: 500px;
+    height: auto;
+    width: 100%;
     border-radius: 5px;
 }
