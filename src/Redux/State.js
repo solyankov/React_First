@@ -29,8 +29,6 @@ let store={
             ],
             NewMessageText : ''
         },
-
-
     },
 
 

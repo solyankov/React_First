@@ -1,7 +1,13 @@
 const UPDATE_POST_AREA = 'UPDATE-POST-AREA'
 const ADD_POST = 'ADD-POST'
 
-const ProfileReducer=(state, action)=>{
+let initialState={posts : [
+        {text: 'Hello, its post 1', id: 1},
+    ],
+    NewPostText : '',
+}
+
+const ProfileReducer=(state = initialState, action)=>{
     switch (action.type){
         case ADD_POST :
             let NewPost={
